@@ -25,7 +25,7 @@
 
       <div class="shrink-0 mx-2 logo-container shadow-none">
         <div class="w-24 h-24 rounded-full border-2 border-primary/20 shadow-none logo-ring flex items-center justify-center relative overflow-hidden">
-          <img src="https://cdn.discordapp.com/attachments/1275164285860974633/1369450271385583758/raw.png?ex=681be773&is=681a95f3&hm=8abc03c70b42833a8a9b4682099cef94e383bcdc02b9a282c2d3cab2e55f3ad0&"
+          <img src="https://cdn.discordapp.com/attachments/1275164285860974633/1369448581462753280/image.png?ex=681be5e0&is=681a9460&hm=a70d31ce9edcf4a181c3507362fa2003ac40f8c597f95e1775447abe8d40110e&"
                class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
         </div>
       </div>
@@ -37,17 +37,52 @@
     <div class="w-[10rem]"></div>
   </div>
 </nav>
-    <section class="bg-emerald-100 py-16">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-4">Professional Landscaping Services</h2>
-            <p class="text-xl mb-8">Serving Kennebec County since 2019</p>
-            <a href="#contact" class="bg-emerald-600 text-white px-8 py-3 rounded-lg hover:bg-emerald-700">
-                Get Free Quote
-            </a>
-        </div>
-    </section>
+<section class="relative hero min-h-screen bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?lawnmower,lawn');">
+  <div class="absolute inset-0 bg-blue-400 opacity-60 z-0"></div>
 
-    <!-- About Section -->
+  <div class="relative z-10 hero-content container mx-auto flex flex-col items-center text-center py-24 px-4">
+    <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 animate-fadeInDown">
+      Baker's Lawn Care
+    </h1>
+    <p class="text-xl md:text-2xl text-white mb-8 animate-fadeInUp">
+      A Cut Above The Rest
+    </p>
+    <a href="#contact" class="btn btn-primary px-8 py-3 shadow-lg transition-transform duration-300 ease-in-out hover:scale-105">
+      Schedule a Service
+    </a>
+  </div>
+
+  <div class="absolute bottom-0 left-0 w-full overflow-hidden h-64 z-0 pointer-events-none">
+    <div class="absolute bottom-0 w-[400%] h-full animate-loop-wave">
+      <svg class="w-1/2 h-full float-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 320" preserveAspectRatio="none">
+        <path d="M0,200 C400,300 800,100 1200,180 C1600,260 2000,120 2400,200 L2400,320 L0,320 Z" fill="#4caf50" opacity="0.7" />
+      </svg>
+      <svg class="w-1/2 h-full float-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 320" preserveAspectRatio="none">
+        <path d="M0,200 C400,300 800,100 1200,180 C1600,260 2000,120 2400,200 L2400,320 L0,320 Z" fill="#4caf50" opacity="0.7" />
+      </svg>
+    </div>
+  </div>
+
+  <style>
+  
+    .animate-fadeInDown {
+      animation: fadeInDown 1s ease-out;
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes loopWave {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-loop-wave {
+      animation: loopWave 10s linear infinite;
+    }
+  </style>
+</section>
+
+
     <section id="about" class="py-16">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto">
