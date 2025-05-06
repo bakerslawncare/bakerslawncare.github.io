@@ -3,223 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baker's Lawn Care - A Cut Above The Rest</title>
-    <style>
-        /* Modern, professional styling */
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #2a7a3a;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #1a5a2a;
-            padding: 0.5rem;
-        }
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-        }
-        nav li {
-            margin: 0 1rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .hero {
-            background-image: url('lawn-care-hero.jpg');
-            background-size: cover;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-        .service-card {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 1rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-        .testimonials {
-            background-color: #f5f5f5;
-            padding: 2rem 0;
-        }
-        .cta {
-            background-color: #2a7a3a;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-            margin: 2rem 0;
-        }
-    </style>
+    <title>Baker's Lawn Care - Professional Landscaping Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Baker's Lawn Care</h1>
-        <p>A Cut Above The Rest</p>
+<body class="font-['Open_Sans'] bg-gray-50">
+    <!-- Header -->
+    <header class="bg-emerald-800 text-white py-6">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold">Baker's Lawn Care</h1>
+            <p class="mt-2">A Cut Above The Rest</p>
+        </div>
     </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#equipment">Our Equipment</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+
+    <!-- Navigation -->
+    <nav class="bg-emerald-700 text-white">
+        <div class="container mx-auto px-4">
+            <ul class="flex flex-col md:flex-row gap-4 py-4">
+                <li><a href="#about" class="hover:text-emerald-200">About</a></li>
+                <li><a href="#services" class="hover:text-emerald-200">Services</a></li>
+                <li><a href="#equipment" class="hover:text-emerald-200">Equipment</a></li>
+                <li><a href="#testimonials" class="hover:text-emerald-200">Testimonials</a></li>
+                <li><a href="#contact" class="hover:text-emerald-200">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    
-    <section class="hero" id="home">
-        <div>
-            <h2>Professional Landscaping Services in Kennebec County</h2>
-            <p>Quality, reliability, and attention to detail since 2019</p>
-            <a href="#contact" class="button">Get a Free Quote</a>
+
+    <!-- Hero Section -->
+    <section class="bg-emerald-100 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">Professional Landscaping Services</h2>
+            <p class="text-xl mb-8">Serving Kennebec County since 2019</p>
+            <a href="#contact" class="bg-emerald-600 text-white px-8 py-3 rounded-lg hover:bg-emerald-700">
+                Get Free Quote
+            </a>
         </div>
     </section>
-    
-    <div class="container">
-        <section id="about">
-            <h2>About Baker's Lawn Care</h2>
-            <p>Established in 2019, Baker's Lawn Care is a reputable landscaping company based in South China, Maine. Our vision is to be the leading choice of small landscaping businesses by partnering with commercial customers in the Kennebec County area, recognized for the integrity of our workers, ethics of our business practices and quality of our services.</p>
-            
-            <h3>Meet the Owner</h3>
-            <p><strong>Joshua Baker</strong> has more than 20 years of landscaping and snow removal experience. His eye for detail is often brought to his attention by his customers and allows us to get the job done right and on time.</p>
-        </section>
-        
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="services">
-                <div class="service-card">
-                    <h3>Landscaping & Lawn Maintenance</h3>
-                    <ul>
-                        <li>Lawn care and weed control</li>
-                        <li>Material installation (mulch, shrubs, plants)</li>
-                        <li>Landscape design & installation</li>
-                        <li>Retaining wall and patio installation</li>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8">About Baker's Lawn Care</h2>
+                <div class="space-y-6">
+                    <p>Established in 2019 as a Sole Proprietorship based in South China, Maine. Our vision is to be the leading landscaping choice in Kennebec County through integrity, quality service, and ethical business practices.</p>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <h3 class="text-xl font-bold mb-4">Meet Joshua Baker</h3>
+                        <p>Owner with 20+ years experience</p>
+                        <div class="mt-4">
+                            <p>📞 <a href="tel:2074858101" class="text-emerald-600">(207) 485-8101</a></p>
+                            <p>📧 <a href="mailto:BakersLandscaping207@gmail.com" class="text-emerald-600">BakersLandscaping207@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mt-8">
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <h3 class="text-xl font-bold mb-4">Our Mission</h3>
+                            <p>Delivering quality landscaping solutions through efficiency, collaboration, and innovative methods.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <h3 class="text-xl font-bold mb-4">Certifications</h3>
+                            <ul class="list-disc pl-5">
+                                <li>Licensed Maine Arborist</li>
+                                <li>Licensed Commercial Pesticide Applicator (2025)</li>
+                                <li>$2M Liability Insurance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Our Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service Cards -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">Landscaping & Maintenance</h3>
+                    <ul class="space-y-2">
+                        <li>• Lawn care & weed control</li>
+                        <li>• Retaining walls & patios</li>
+                        <li>• Garden bed maintenance</li>
+                        <li>• Weekly mowing schedules</li>
                     </ul>
                 </div>
-                <div class="service-card">
-                    <h3>Seasonal Cleanup</h3>
-                    <ul>
-                        <li>Spring and fall cleanup</li>
-                        <li>Leaf and debris removal</li>
-                        <li>Pruning and trimming</li>
-                        <li>Parking lot sweeping</li>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">Seasonal Cleanup</h3>
+                    <ul class="space-y-2">
+                        <li>• Spring/Fall cleanup</li>
+                        <li>• Leaf & debris removal</li>
+                        <li>• Parking lot sweeping</li>
+                        <li>• Billy Goat debris loader</li>
                     </ul>
                 </div>
-                <div class="service-card">
-                    <h3>Winter Maintenance</h3>
-                    <ul>
-                        <li>Plowing and snow removal</li>
-                        <li>Shoveling and snow blowing</li>
-                        <li>Salting and sanding</li>
-                        <li>24/7 emergency service</li>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">Winter Services</h3>
+                    <ul class="space-y-2">
+                        <li>• 24/7 Snow removal</li>
+                        <li>• Plowing & salting</li>
+                        <li>• Emergency response</li>
+                        <li>• Commercial contracts</li>
                     </ul>
                 </div>
             </div>
-        </section>
-        
-        <section class="cta">
-            <h2>Ready to Transform Your Property?</h2>
-            <p>Contact us today for a free estimate and experience the Baker's Lawn Care difference.</p>
-            <a href="#contact" class="button">Contact Us</a>
-        </section>
-        
-        <section id="equipment">
-            <h2>Our Professional Equipment</h2>
-            <p>We research and use leading technology, equipment and materials to get the job done efficiently.</p>
-            <div class="services">
-                <div class="service-card">
-                    <h3>Trucks</h3>
-                    <ul>
-                        <li>2020 Chevy 4500 Diesel with 5-yard dump body</li>
-                        <li>2016 Chevy 2500</li>
-                        <li>2025 GMC 3500</li>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section id="equipment" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Our Equipment</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">Mowing Systems</h3>
+                    <ul class="space-y-2">
+                        <li>• 2 EXMark zero-turn mowers</li>
+                        <li>• Walker zero-turn with bagger</li>
+                        <li>• Commercial-grade push mowers</li>
                     </ul>
                 </div>
-                <div class="service-card">
-                    <h3>Mowers</h3>
-                    <ul>
-                        <li>2 EXMark zero turn mowers</li>
-                        <li>1 Walker zero turn mower with bagger</li>
-                        <li>2 Push mowers</li>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">Winter Fleet</h3>
+                    <ul class="space-y-2">
+                        <li>• 2025 GMC 3500 with 11ft plow</li>
+                        <li>• Fisher Polycaster Sanders</li>
+                        <li>• 16ft Hydraulic Dump trailer</li>
                     </ul>
                 </div>
-                <div class="service-card">
-                    <h3>Specialty Equipment</h3>
-                    <ul>
-                        <li>Billy Goat debris loader</li>
-                        <li>Leaf box for curbside pickup</li>
-                        <li>Sweepers, blowers, and more</li>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">Specialty Tools</h3>
+                    <ul class="space-y-2">
+                        <li>• Billy Goat debris loader</li>
+                        <li>• Echo PB9010 backpack blowers</li>
+                        <li>• Professional-grade trimmers</li>
                     </ul>
                 </div>
             </div>
-        </section>
-        
-        <section class="testimonials" id="testimonials">
-            <h2>What Our Clients Say</h2>
-            <div class="services">
-                <div class="service-card">
-                    <p>"Baker's Lawn Care has been plowing and salting for us for three seasons. They're reliable and do excellent work."</p>
-                    <p><strong>Pamela Natole</strong>, Waterville, ME</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-emerald-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Client Testimonials</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <p class="mb-4">"Baker's Lawn Care has been plowing and salting for us for three seasons. Reliable and excellent work."</p>
+                    <p class="font-bold">— Pamela Natole, Waterville</p>
                 </div>
-                <div class="service-card">
-                    <p>"We've been using Baker's since 2019 for snow removal, seasonal cleanups, and mowing. Their attention to detail is unmatched."</p>
-                    <p><strong>Nathan Belcher</strong>, Kennebec County</p>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <p class="mb-4">"Their attention to detail is unmatched. We've used them since 2019 for all our property needs."</p>
+                    <p class="font-bold">— Nathan Belcher</p>
                 </div>
-                <div class="service-card">
-                    <p>"They completed all the landscaping work from mowing to building rock walls. They created a beautiful landscape for our home and barn."</p>
-                    <p><strong>Chris Valley</strong>, Hallowell, ME</p>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <p class="mb-4">"Created beautiful landscapes for our home and barn. Highly professional team."</p>
+                    <p class="font-bold">— Chris Valley, Hallowell</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <p class="mb-4">"Managed emergency snow removal for 6 locations in 8 hours. Impressive response!"</p>
+                    <p class="font-bold">— Corporate Client</p>
                 </div>
             </div>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact Baker's Lawn Care</h2>
-            <p><strong>Phone:</strong> <a href="tel:2074858101">(207) 485-8101</a></p>
-            <p><strong>Email:</strong> <a href="mailto:BakersLandscaping207@gmail.com">BakersLandscaping207@gmail.com</a></p>
-            <p>Available 24/7/365 - You will never need to dial an extension, and you will never be on hold.</p>
-            
-            <h3>Service Area</h3>
-            <p>Serving Kennebec County and surrounding areas including Dresden, Waterville, Augusta, and more.</p>
-        </section>
-    </div>
-    
-    <footer>
-        <p>&copy; 2025 Baker's Lawn Care. All rights reserved.</p>
-        <p>Fully insured: $2,000,000 liability coverage and workers compensation as required by the State of Maine.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">Contact Us</h2>
+                <div class="bg-white p-8 rounded-lg shadow">
+                    <div class="text-center mb-8">
+                        <p class="text-lg">Available 24/7/365</p>
+                        <p class="text-2xl font-bold mt-2">
+                            <a href="tel:2074858101" class="text-emerald-600">(207) 485-8101</a>
+                        </p>
+                        <p class="mt-4">
+                            <a href="mailto:BakersLandscaping207@gmail.com" class="text-emerald-600">
+                                BakersLandscaping207@gmail.com
+                            </a>
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-xl font-bold mb-4">Service Area</h3>
+                        <p>Serving Dresden, Waterville, Augusta, and all of Kennebec County</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Baker's Lawn Care. All rights reserved.</p>
+            <p class="mt-2">$2,000,000 Liability Insurance | Maine Licensed</p>
+        </div>
     </footer>
 </body>
 </html>
