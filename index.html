@@ -16,16 +16,28 @@
   <div class="absolute inset-0 bg-blue-500 opacity-60 z-0"></div>
 
   <div class="relative z-10 hero-content container mx-auto flex flex-col items-center text-center py-24 px-4">
-    <h1 class="text-5xl md:text-6xl  titan-one-regular text-white mb-4 animate-fadeInDown">
+    <h1 class="text-5xl md:text-6xl  titan-one-regular shadow-sm text-white mb-4 animate-fadeInDown">
       Baker's Lawn Care
     </h1>
     <p class="text-xl md:text-2xl font-bold text-white mb-8 animate-fadeInUp">
       A Cut Above The Rest
     </p>
-   <button class="px-6 py-2 font-medium bg-indigo-500 text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
-Shedule with us today
-
-      </button>
+<button class="relative z-50 px-6 py-2 font-medium bg-indigo-500 text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] overflow-hidden">
+  <span class="relative z-10">Schedule Service Today</span>
+  
+  <!-- Wave overlay -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute -left-full top-0 h-full w-[200%] transition-transform duration-500 hover:translate-x-[50%]">
+      <svg class="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path 
+          d="M0,50 C20,0 50,0 100,50 L100,100 L0,100 Z" 
+          fill="currentColor" 
+          class="text-emerald-500/30"
+        ></path>
+      </svg>
+    </div>
+  </div>
+</button>
   </div>
 
   <div class="absolute bottom-0 left-0 w-full overflow-hidden h-64 z-0 pointer-events-none">
