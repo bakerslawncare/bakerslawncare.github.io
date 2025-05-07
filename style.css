@@ -1,1 +1,25 @@
+.titan-one-regular {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.btn:hover .wave-effect {
+  animation: waveFill 0.8s ease-out;
+}
 
+@keyframes waveFill {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+button:hover .wave-overlay {
+  animation: waveFill 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes waveFill {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0%); }
+}
