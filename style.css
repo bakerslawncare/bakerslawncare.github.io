@@ -6,27 +6,7 @@
 .btn:hover .wave-effect {
   animation: waveFill 0.8s ease-out;
 }
-.dock-layer {
-  position: relative;
-}
 
-.dock-layer::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: hsl(var(--b3));
-  border-radius: 0.75rem;
-  transform: translateY(4px);
-  z-index: -1;
-  transition: all 0.2s ease;
-  filter: blur(2px);
-  opacity: 0.8;
-}
-
-.dock-layer:hover::before {
-  transform: translateY(6px);
-  opacity: 0.9;
-}
 @keyframes waveFill {
   0% {
     transform: translateX(-100%);
